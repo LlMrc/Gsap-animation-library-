@@ -1,0 +1,13 @@
+.intro {
+  position: relative;
+  color: white;
+  font-size: 2vw;
+  text-transform: uppercase;
+  margin-top: 10vw;
+  margin-left: 10vw;
+}
+
+.intro p {
+  margin: 0px;
+  position: relative;
+}
