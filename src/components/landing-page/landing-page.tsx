@@ -16,7 +16,7 @@ function LandingPage() {
       scrollTrigger: {
         trigger: document.documentElement,
         start: "top",
-        end: "+=500px",
+        end: "+=400px",
         scrub: true,
       },
     });
@@ -32,11 +32,11 @@ function LandingPage() {
       </div>
 
       <div className={styles.introContainer}>
-        <div data-scroll data-scroll-speed="0.3" className={styles.introImage}>
+        <div data-scroll data-scroll-speed="0.8" className={styles.introImage}>
           <img ref={introImg} src={image} alt="intro image" />
         </div>
 
-        <h1 data-scroll data-scroll-speed="0.6">
+        <h1 data-scroll data-scroll-speed="0.3">
           smooth scroll
         </h1>
       </div>

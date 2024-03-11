@@ -1,6 +1,6 @@
 import style from "./style.module.css";
-import project1 from "../../images/project/1.jpeg";
-import project2 from "../../images/project/2.jpeg";
+import project1 from "../../images/project/1.png";
+import project2 from "../../images/project/2.png";
 import project3 from "../../images/project/3.webp";
 import project4 from "../../images/project/4.png";
 import gsap from "gsap";
@@ -38,10 +38,9 @@ const Project = () => {
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.create({
       trigger: imageContainer.current,
-      start: "top+=200px",
-      end: "bottom+=400px bottom",
+      start: "top+=160px top",
+      end: "bottom+=500px bottom",
       pin: true,
-      markers: true,
     });
   }, []);
 
@@ -51,6 +50,7 @@ const Project = () => {
         <div ref={imageContainer} className={style.imageDescription}>
           <img src={`${projects[selectedProject].src}`} alt="project image" />
         </div>
+
         <div className={style.column}>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting

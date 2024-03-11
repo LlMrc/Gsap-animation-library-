@@ -1,7 +1,11 @@
-import LocomotiveScroll from "locomotive-scroll";
 import LandingPage from "./components/landing-page/landing-page";
 import Project from "./components/project/project";
 import Intro from "./components/intro/intro";
+import About from "./components/about/about";
+import { useLayoutEffect, useRef } from "react";
+import Expertize from "./components/expertize/expertize";
+import LocomotiveScroll from "locomotive-scroll";
+import Tools from "./components/tools/tools";
 
 function App() {
   /*  ACCESS THE WINDOWS FOR NEXT.JS 
@@ -19,11 +23,14 @@ function App() {
 
   return (
     <>
-      <div className="main">
+      <main data-scroll-container className="main">
         <LandingPage />
         <Intro />
+        <About />
         <Project />
-      </div>
+        <Expertize />
+        <Tools />
+      </main>
     </>
   );
 }

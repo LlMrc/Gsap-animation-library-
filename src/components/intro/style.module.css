@@ -5,6 +5,7 @@
   text-transform: uppercase;
   margin-top: 10vw;
   margin-left: 10vw;
+  max-width: 50vw;
 }
 
 .intro p {
