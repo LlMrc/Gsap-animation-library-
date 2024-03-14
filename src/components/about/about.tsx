@@ -1,33 +1,48 @@
 import style from "./style.module.css";
-import profil from "../../images/profil/profil.jpg";
+import prflImage from "../../images/profil/profil.jpg";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import { useLayoutEffect, useRef } from "react";
+
+import { useEffect, useLayoutEffect, useRef } from "react";
+
+//**************************** */
 
 const AboutMe = () => {
-  const wrapper = useRef(null);
-  const descriptionContainer = useRef(null);
+  const profilRef = useRef(null);
+  const dsc = useRef(null);
+  //************************** */
 
   useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    ScrollTrigger.create({
-      trigger: wrapper.current,
-      start: "top+=60px top",
-      end: "bottom-=50px  bottom",
+    let ctx = gsap.context(() => {
+      gsap.fromTo(
+        profilRef.current,
+        {
+          transition: "all 0.9s ease",
+        },
+        {
+          backgroundColor: "#CF7BD8",
+          transition: "all 2s ease",
+        }
+      );
     });
+    return ctx.clear();
   }, []);
+  //*************************************** */
 
   return (
-    <div ref={wrapper} className={style.wrapper}>
+    <div className={style.wrapper}>
       <div className={style.container}>
-        <div className={style.profil}>
-          <img src={profil} alt="photo profil" />
+        <div ref={profilRef} className={style.profil}>
+          <img src={prflImage} alt="photo profil" />
 
-          <div className={style.name}>Louis Marc Leonard</div>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ab.
-          </p>
+          <div className={style.title}>
+            <div className={style.name}>Louis Marc Leonard</div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              ab.
+            </p>
+          </div>
         </div>
+
         <div className={style.description}>
           <h2>About Me</h2>
           <p>
@@ -41,5 +56,4 @@ const AboutMe = () => {
     </div>
   );
 };
-
 export default AboutMe;

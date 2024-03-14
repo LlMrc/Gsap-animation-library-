@@ -1,6 +1,5 @@
 .wrapper {
   padding: 2rem 4rem;
-  background-color: bisque;
 }
 
 .container {
@@ -16,4 +15,9 @@
   font-weight: 700;
   max-width: 50vw;
   text-transform: capitalize;
+}
+
+.icon {
+  height: 50vh;
+  background-color: blueviolet;
 }

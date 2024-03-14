@@ -1,7 +1,8 @@
 .wrapper {
-  margin-top: 30vh;
+  padding-top: 30vh;
   width: 100vw;
-  margin-bottom: 10vh;
+  padding-bottom: 10vh;
+  background: #0c2d57;
 }
 .wrapper h2 {
   text-align: center;

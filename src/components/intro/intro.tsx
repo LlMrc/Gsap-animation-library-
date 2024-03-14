@@ -1,7 +1,7 @@
 import style from "./style.module.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 
 interface Props {
   myStringArray: string[];
@@ -18,7 +18,7 @@ function Intro() {
     "but also the leap into electronic typesetting",
   ];
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const t = gsap.timeline({
       scrollTrigger: {
@@ -26,7 +26,6 @@ function Intro() {
         scrub: true,
         start: "10px bottom",
         end: "bottom+=330px bottom",
-        markers: true,
       },
     });
     t.from(text.current, { left: "-200px", opacity: 0, fontSize: "0vw" }).to(

@@ -31,5 +31,5 @@ a:hover {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  gap: 20px;
+  background-color: #0c2d57;
 }

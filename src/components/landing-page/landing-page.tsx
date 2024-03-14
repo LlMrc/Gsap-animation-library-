@@ -5,6 +5,8 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
 
+//**************** */
+
 function LandingPage() {
   const bg = useRef(null);
   const introImg = useRef(null);
@@ -12,17 +14,21 @@ function LandingPage() {
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    const timeLime = gsap.timeline({
-      scrollTrigger: {
-        trigger: document.documentElement,
-        start: "top",
-        end: "+=400px",
-        scrub: true,
-      },
+    let ctx = gsap.context(() => {
+      const timeLime = gsap.timeline({
+        scrollTrigger: {
+          trigger: homeHeader.current,
+          start: "center+=20% center",
+          end: "bottom top+=200",
+          scrub: true,
+        },
+      });
+      timeLime
+        .from(bg.current, { clipPath: `inset(15%)` })
+        .to(introImg.current, { height: "200px" }, 0);
     });
-    timeLime
-      .from(bg.current, { clipPath: `inset(15%)` })
-      .to(introImg.current, { height: "200px" }, 0);
+
+    return () => ctx.revert(); // <- cleanup!
   }, []);
 
   return (

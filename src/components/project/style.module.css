@@ -1,7 +1,9 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 12vh;
+  padding-top: 12vh;
+  z-index: 10;
+  background: #0c2d57;
 }
 
 .projectContainer {
@@ -12,7 +14,6 @@
 }
 .imageDescription {
   width: 26%;
-  z-index: 10;
 }
 
 .imageDescription img {
@@ -47,7 +48,6 @@
 }
 
 .projectEl {
-  z-index: 0;
   width: 100%;
   color: white;
   text-transform: uppercase;

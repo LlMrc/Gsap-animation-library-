@@ -35,13 +35,23 @@ const Project = () => {
   const imageContainer = useRef(null);
 
   useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    ScrollTrigger.create({
-      trigger: imageContainer.current,
-      start: "top+=160px top",
-      end: "bottom+=500px bottom",
-      pin: true,
+    let ctx = gsap.context(() => {
+      gsap.registerPlugin(ScrollTrigger);
+      ScrollTrigger.create({
+        trigger: imageContainer.current,
+        start: "top+=200 top+=50",
+        end: "bottom+=160 center",
+        pin: true,
+        toggleActions: "restart pause none none",
+        pinSpacing: false,
+      });
+      gsap.to(imageContainer.current, {
+        duration: 4,
+        transition: "all 0.9s ease",
+      });
     });
+
+    ctx.clear();
   }, []);
 
   return (
