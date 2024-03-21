@@ -94,9 +94,15 @@ function LandingPage() {
         <h1 id="title-3">Developer</h1>
       </div>
       <div id="welcome" className={styles.link}>
-        <img src={facebook} alt="facebook" />
-        <img src={twitter} alt="twitter" />
-        <img src={linkedin} alt="linkedin" />
+        <a href="https://web.facebook.com/LouisMrcVops">
+          <img src={facebook} alt="facebook" />
+        </a>
+        <a href="https://twitter.com/LouisMcLeonard1">
+          <img src={twitter} alt="twitter" />
+        </a>
+        <a href="https://www.linkedin.com/in/louis-marc-leonard-a57a13192/">
+          <img src={linkedin} alt="linkedin" />
+        </a>
       </div>
     </section>
   );

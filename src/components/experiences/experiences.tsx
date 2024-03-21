@@ -67,7 +67,7 @@ function Experiences() {
   useEffect(() => {
     const interval = setInterval(() => {
       onNextClick(); // Call onNextClick every 10 seconds
-    }, 10000); // 10 seconds interval
+    }, 30000); // 10 seconds interval
 
     return () => clearInterval(interval); // Clear interval on component unmount
   }, []);
@@ -93,7 +93,11 @@ function Experiences() {
                   <div id={"desc"} className={styles.des}>
                     {el.description}
                   </div>
-                  <button id={"btn"}>Read More</button>
+                  <button id={"btn"}>
+                    <a href={el.link} target="blank">
+                      Read More
+                    </a>
+                  </button>
                 </div>
               </div>
             ))}

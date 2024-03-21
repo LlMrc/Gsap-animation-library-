@@ -42,6 +42,7 @@ function Expertize() {
       <div className={styles.wrapper}>
         <div ref={contentWidth}>
           <h2 className="t1"> My </h2>
+
           <h2 id="title"> Expertizes</h2>
         </div>
 

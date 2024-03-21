@@ -6,6 +6,8 @@ import About from "./components/about/about";
 import Expertize from "./components/expertize/expertize";
 import LocomotiveScroll from "locomotive-scroll";
 import Experiences from "./components/experiences/experiences";
+import Tools from "./components/tools/tools";
+import Footer from "./components/footer/footer";
 
 function App() {
   /*  ACCESS THE WINDOWS FOR NEXT.JS 
@@ -30,7 +32,9 @@ function App() {
         <Project />
         <Expertize />
         <Experiences />
+        <Tools />
       </main>
+      <Footer />
     </>
   );
 }
