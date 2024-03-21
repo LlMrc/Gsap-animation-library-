@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
+  transform: translateY(+50px);
   border-radius: 1.5rem;
   padding: 1rem;
   width: 100rem;
@@ -38,5 +38,27 @@
 
 .description {
   display: block;
-  font-size: 1.8vw;
+  width: 160rem;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.media hr {
+  width: 100px;
+  border: #0c2d57 solid 1px;
+  background: var(--background);
+  height: 0.4px;
+}
+.media svg {
+  border: var(--background) 1px solid;
+  border-radius: 5px;
+  margin: 4px;
+  padding: 2px;
+  width: 12px;
+  height: 12px;
 }

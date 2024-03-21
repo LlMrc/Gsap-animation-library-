@@ -9,15 +9,10 @@
   font-size: 7rem;
   font-weight: bold;
   letter-spacing: 4px;
-  text-shadow: #133e75;
   text-transform: uppercase;
+  margin: 0;
 }
-.scroll {
-  background: #133e75;
-  margin: 0 auto;
-  max-width: 80%;
-  overflow: hidden;
-}
+
 .container {
   display: flex;
   align-items: center;

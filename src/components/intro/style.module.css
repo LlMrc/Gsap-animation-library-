@@ -6,9 +6,13 @@
   margin-top: 10vw;
   margin-left: 10vw;
   max-width: 50vw;
+  backdrop-filter: blur(1px);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .intro p {
   margin: 0px;
   position: relative;
+  font-weight: 300;
 }

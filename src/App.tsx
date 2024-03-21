@@ -2,10 +2,10 @@ import LandingPage from "./components/landing-page/landing-page";
 import Project from "./components/project/project";
 import Intro from "./components/intro/intro";
 import About from "./components/about/about";
-import { useLayoutEffect, useRef } from "react";
+
 import Expertize from "./components/expertize/expertize";
 import LocomotiveScroll from "locomotive-scroll";
-import Tools from "./components/tools/tools";
+import Experiences from "./components/experiences/experiences";
 
 function App() {
   /*  ACCESS THE WINDOWS FOR NEXT.JS 
@@ -29,7 +29,7 @@ function App() {
         <About />
         <Project />
         <Expertize />
-        <Tools />
+        <Experiences />
       </main>
     </>
   );

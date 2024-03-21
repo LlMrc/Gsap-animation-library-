@@ -3,17 +3,19 @@
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgb(199, 197, 197);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --background: #0c2d57;
+  --color: rgb(199, 197, 197);
+  -webkit-backdrop-filter: blur(18px);
 }
 
 body {
   margin: 0px;
-  background: #0c2d57;
+  background: var(--background);
   width: max-content;
 }
 
@@ -33,3 +35,25 @@ a:hover {
   width: 100vw;
   background-color: #0c2d57;
 }
+
+/* ////////////////////////////////////// EXPERTIZE SECTION********** */
+.char {
+  transform: translateY(115px);
+  transform: transform 0.5s;
+  clip-path: polygon(1% 2%, 99% 2%, 100% 100%, 0% 100%);
+
+  background-image: url("https://media.istockphoto.com/id/104783958/photo/diamond-steel-plate-texture-background.jpg?s=612x612&w=0&k=20&c=hU_OmmD6ycKRVFNS74UOvl1PjR2njDm1OT_HyrUobXw=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.t1 {
+  transform: translateY(+200px);
+  opacity: 0;
+}
+
+/* ////////////////////////////////////////////// */

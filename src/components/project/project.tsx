@@ -31,47 +31,46 @@ const projects = [
 
 const Project = () => {
   const [selectedProject, setSelectedProject] = useState(0);
-  const container = useRef(null);
   const imageContainer = useRef(null);
 
   useLayoutEffect(() => {
+    const el = imageContainer.current;
+    gsap.registerPlugin(ScrollTrigger);
     let ctx = gsap.context(() => {
-      gsap.registerPlugin(ScrollTrigger);
       ScrollTrigger.create({
-        trigger: imageContainer.current,
-        start: "top+=200 top+=50",
-        end: "bottom+=160 center",
+        trigger: el,
+        start: "top top+=50",
+        end: "bottom+=200 top+=100",
         pin: true,
+
         toggleActions: "restart pause none none",
-        pinSpacing: false,
-      });
-      gsap.to(imageContainer.current, {
-        duration: 4,
-        transition: "all 0.9s ease",
       });
     });
 
-    ctx.clear();
+    return () => ctx.revert();
   }, []);
 
   return (
-    <div ref={container} className={style.wrapper}>
+    <div className={style.wrapper}>
       <div className={style.projectContainer}>
-        <div ref={imageContainer} className={style.imageDescription}>
+        <div ref={imageContainer} className={style.imageContainer}>
           <img src={`${projects[selectedProject].src}`} alt="project image" />
         </div>
 
         <div className={style.column}>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+            Whether you're here to explore my work, seek inspiration, or
+            collaborate on a project, I invite you to immerse yourself in the
+            world of front-end development.
           </p>
         </div>
         <div className={style.column}>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry.
+            From responsive websites to interactive web applications, I've
+            embraced the ever-evolving landscape of front-end development. With
+            a keen eye for design and a commitment to usability, I strive to
+            create seamless experiences that resonate with users across devices
+            and platforms.
           </p>
         </div>
       </div>
