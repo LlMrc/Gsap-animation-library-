@@ -9,6 +9,7 @@ import js from "../../images/icon/js-official-svgrepo-com.svg";
 import tailwinds from "../../images/icon/tailwindcss-icon-svgrepo-com.svg";
 import react from "../../images/icon/react.svg";
 import typscript from "../../images/icon/typescript.svg";
+import network from "../../images/icon/networkk.svg";
 
 const Icon = [
   { name: "React", icon: react },
@@ -22,6 +23,7 @@ const Icon = [
   { name: "Android", icon: android },
   { name: "Html", icon: html },
   { name: "Css", icon: css },
+  { name: "Cmp. network", icon: network },
 ];
 
 export default Icon;

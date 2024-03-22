@@ -9,7 +9,10 @@ const Footer = () => {
           mail:
           <a href="mailTo:llouismrc2@gmail.com"> llouismrc2@gmail.com</a>
         </p>
-        <p>Tel: +509 31428456</p>
+        <p>
+          Call me at:
+          <a href="tel: +509 31428456"> +509 31428456</a>
+        </p>
       </div>
       <div>
         <p>&copy; 2024 My Masha+ Company. All rights reserved.</p>

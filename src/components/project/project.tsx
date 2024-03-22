@@ -1,8 +1,8 @@
 import style from "./style.module.css";
-import project1 from "../../images/project/1.png";
-import project2 from "../../images/project/2.png";
-import project3 from "../../images/project/3.webp";
-import project4 from "../../images/project/4.png";
+import project1 from "../../images/project/platform.png";
+import project2 from "../../images/project/store.png";
+import project3 from "../../images/project/odessa.png";
+import project4 from "../../images/project/mui.png";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef, useState } from "react";
