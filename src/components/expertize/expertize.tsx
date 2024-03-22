@@ -27,7 +27,7 @@ function Expertize() {
         opacity: 1,
         delay: 0.7,
         transition: "all 1s power1.inOut ",
-      }).to(".char", {
+      }).to(text.chars, {
         y: 0,
         stagger: 0.05,
         duration: 0.1,
