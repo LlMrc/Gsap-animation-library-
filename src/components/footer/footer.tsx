@@ -4,8 +4,11 @@ import styles from "./style.module.css";
 const Footer = () => {
   return (
     <div className={styles.wrapper}>
-      <div>
-        <p>mail: llouismrc2@gmail.com</p>
+      <div className={styles.container}>
+        <p>
+          mail:
+          <a href="mailTo:llouismrc2@gmail.com"> llouismrc2@gmail.com</a>
+        </p>
         <p>Tel: +509 31428456</p>
       </div>
       <div>

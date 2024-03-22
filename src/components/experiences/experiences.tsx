@@ -5,6 +5,7 @@ import arrowRight from "../../images/icon/arrow-right.svg";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import itemData from "../data/data";
+import Description from "../description/description";
 
 function Experiences() {
   const contentRef = useRef(null);
@@ -122,10 +123,11 @@ const Intro = () => {
   return (
     <div className={styles.intro}>
       <h2>My Experiences</h2>
-      Explore my journey in front-end development — a fusion of creativity,
-      code, and continuous growth. Dive into projects that showcase my passion
-      for crafting seamless user experiences and my dedication to mastering the
-      latest technologies. Let's embark on this digital adventure together.
+      <Description
+        description={` Over the course of my career, I have had the opportunity to work on
+        various projects and gain valuable skills. Here's a look at some of my
+        experiences`}
+      />
     </div>
   );
 };

@@ -17,7 +17,7 @@ const itemData = [
     title: "Google Playstore listing",
     description:
       "Understanding the basic principles of Android mobile app development is crucial for optimizing the listing on the Play Store. This includes understanding different versions of Android, app size restrictions, and development best practices.",
-    image: `url("https://th.bing.com/th/id/OIP.52ykqiIuWI2AvyRVTQSxtAHaDr?rs=1&pid=ImgDetMain")`,
+    image: `url("https://wallpaperaccess.com/full/1657557.jpg")`,
     link: "https://www.credential.net/ca91315b-4a93-46c1-9cc0-07239bde503a",
   },
   {

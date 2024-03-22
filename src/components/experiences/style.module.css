@@ -65,8 +65,8 @@
   font-family: system-ui;
   display: none;
   background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: none;
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  backdrop-filter: blur(10px) brightness(0.57) contrast(152%) grayscale(69%)
+    hue-rotate(65deg) opacity(62%) saturate(58%) sepia(25%);
 }
 
 .slide .item:nth-child(2) .content {
@@ -129,11 +129,14 @@
 .button button:hover {
   background: #727171;
 }
-
 .intro {
   width: 52vw;
   padding: 4rem 2rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 24px;
   letter-spacing: 2px;
+}
+
+.intro h2 {
+  transform: translateX(50px);
 }

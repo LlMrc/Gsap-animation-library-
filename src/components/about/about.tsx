@@ -116,7 +116,8 @@ const AboutMe = () => {
               );
             })}
           </p>
-          <span>llouismrc2@gmail.com</span>
+          <a href="mailTo:llouismrc2@gmail.com">llouismrc2@gmail.com</a>
+
           <div className={style.media}>
             <hr />
             <a href="https://github.com/LlMrc">

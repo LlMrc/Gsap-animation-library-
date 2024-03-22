@@ -9,23 +9,27 @@ import { useLayoutEffect, useRef, useState } from "react";
 
 const projects = [
   {
-    title: "Salar de Atacama",
+    title: "Masha platform",
     src: project1,
+    link: "https://masha-plus-startup.vercel.app/",
   },
 
   {
-    title: "Valle de la luna",
+    title: "Masha/+ store",
     src: project2,
+    link: "https://llmrc.github.io/mash-demo/",
   },
 
   {
-    title: "Miscanti Lake",
+    title: "Odessa viewer",
     src: project3,
+    link: "https://play.google.com/store/apps/details?id=dev.maggev.io",
   },
 
   {
-    title: "Miniques Lagoons",
+    title: "Mui template",
     src: project4,
+    link: "https://mashpa.vercel.app/",
   },
 ];
 
@@ -84,7 +88,11 @@ const Project = () => {
               }}
               className={style.projectEl}
             >
-              <h2>{project.title}</h2>
+              <h2>
+                <a href={project.link} target="_blank">
+                  {project.title}
+                </a>
+              </h2>
             </div>
           );
         })}

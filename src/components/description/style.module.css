@@ -1,0 +1,8 @@
+.paragraph {
+  padding: 2rem 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  transform: translateX(-100px);
+  opacity: 0;
+}

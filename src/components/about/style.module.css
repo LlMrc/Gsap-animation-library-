@@ -40,6 +40,9 @@
   display: block;
   width: 160rem;
 }
+.description a {
+  color: #0c2d57;
+}
 
 .media {
   display: flex;

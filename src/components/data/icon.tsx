@@ -8,9 +8,11 @@ import android from "../../images/icon/android-svgrepo-com.svg";
 import js from "../../images/icon/js-official-svgrepo-com.svg";
 import tailwinds from "../../images/icon/tailwindcss-icon-svgrepo-com.svg";
 import react from "../../images/icon/react.svg";
+import typscript from "../../images/icon/typescript.svg";
 
 const Icon = [
   { name: "React", icon: react },
+  { name: "Typscript", icon: typscript },
   { name: "Flutter", icon: flutter },
   { name: "Next.js", icon: next },
   { name: "Material UI", icon: mui },

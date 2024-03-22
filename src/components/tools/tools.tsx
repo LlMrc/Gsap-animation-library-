@@ -1,12 +1,18 @@
-import React from "react";
 import style from "./style.module.css";
 import Icon from "../data/icon";
+import Description from "../description/description";
 
 function Tools() {
   return (
     <div className={style.wrapper}>
       <div className={style.box} />
-      <Intro />
+      <Description
+        description={`
+       My skills section showcases a kaleidoscope of my talents, blending
+      creativity, problem-solving, and an unwavering passion for continuous
+      learning.
+     `}
+      />
       {Icon.map((item, index) => {
         return (
           <>
@@ -22,13 +28,3 @@ function Tools() {
 }
 
 export default Tools;
-const Intro = () => {
-  return (
-    <p className={style.intro}>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi rerum sed
-      perferendis minima minus! Pariatur quisquam illum odit beatae molestias
-      ratione voluptatum assumenda, iste magnam quas aliquid doloribus.
-      Voluptates, aliquam.
-    </p>
-  );
-};

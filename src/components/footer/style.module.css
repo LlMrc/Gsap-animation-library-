@@ -7,3 +7,11 @@
   align-items: center;
   margin-top: 2rem;
 }
+
+.container p a {
+  color: var(--color);
+}
+
+.container p a:hover {
+  color: rgb(179, 96, 165);
+}
