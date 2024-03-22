@@ -15,21 +15,21 @@ interface Prop {
 const Testimonial = () => {
   return (
     <div className={styles.testiWrapper}>
-      <div id="bloc-1">
+      <div>
         <Expert
           title={`Mobile developement`}
           desc={`Dive into the world of mobile application development with Flutter, where my expertise shines in crafting dynamic and intuitive user experiences across iOS and Android platforms. With a robust foundation in Flutter's versatile framework, I excel in architecting and implementing feature-rich applications that seamlessly blend stunning visuals with seamless functionality.`}
           src={mobile}
         />
       </div>
-      <div id="bloc-2">
+      <div>
         <Expert
           title={`Web developement`}
           desc={`Embark on a journey through the digital realm with a web developer seasoned in the art of crafting immersive and responsive web experiences. With Next.js, React.js, and a mastery of vanilla JavaScript at my fingertips, I bring ideas to life with elegance and efficiency.`}
           src={web}
         />
       </div>
-      <div id="bloc-3">
+      <div>
         <Expert
           title={`cumputer Network`}
           desc={`Navigate the intricate pathways of computer networks with a seasoned professional who possesses a deep understanding of network architecture, protocols, and technologies. With a foundation rooted in the fundamentals of networking principles, I bring expertise in designing, implementing, and maintaining robust network infrastructures that facilitate seamless communication and data exchange.`}

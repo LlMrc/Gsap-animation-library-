@@ -1,6 +1,6 @@
 .wrapper {
   padding: 10rem auto;
-  background-color: rgb(179, 96, 165);
+  background-color: var(--primary);
   color: #0c2d57;
 }
 .container {
@@ -10,7 +10,6 @@
   justify-content: space-between;
   align-items: center;
   margin: 6vw 10vw;
-  height: 100vh;
 
   padding: 0 4rem;
 }
@@ -64,4 +63,56 @@
   padding: 2px;
   width: 12px;
   height: 12px;
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    margin-top: 12rem;
+  }
+  .container {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    background-color: var(--background);
+  }
+  .profil {
+    gap: 1rem;
+    width: 80%;
+    margin: 0;
+    flex-direction: row;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .profil img {
+    width: 200px;
+    height: 100px;
+  }
+  .description {
+    background-color: var(--primary);
+    width: 100vw;
+    position: relative;
+    padding: 20px;
+  }
+  .paragraph {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    background-color: var(--primary);
+  }
+  .profil {
+    background: var(--secondary);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    height: 100vh;
+  }
 }

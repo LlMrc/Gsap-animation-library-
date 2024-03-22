@@ -19,9 +19,9 @@ const AboutMe = () => {
       gsap.to(el, {
         y: 0,
         stagger: 0.05,
-        backgroundColor: "#D27EDB",
+        backgroundColor: "#fc9d7b",
         transition: "all 2s ease",
-        border: "1px solid #77537A ",
+        border: "1px solid #ff7f50 ",
         delay: 1,
         scrollTrigger: {
           trigger: el,
@@ -46,12 +46,12 @@ const AboutMe = () => {
       });
       tl.to(itemsRef.current, {
         stagger: 0.1,
-        color: "#CF7BD8",
+        color: "#ff7f50",
         background: "#0c2d57",
         markers: true,
       }).to(pRef.current, {
         stagger: 0.1,
-        color: "#CF7BD8",
+        color: "#FF7F50",
         background: "#0c2d57",
         markers: true,
         x: +50,
@@ -85,37 +85,39 @@ const AboutMe = () => {
 
         <div className={style.description}>
           <h2>About Me</h2>
-          <p>
-            {paragraph.split("").map((letter, index) => {
-              return (
-                <span
-                  ref={(el) => {
-                    itemsRef.current[index] = el!;
-                  }}
-                  className={style.revealText}
-                  key={index}
-                >
-                  {letter}
-                </span>
-              );
-            })}
-          </p>
+          <div className={style.paragraph}>
+            <p>
+              {paragraph.split("").map((letter, index) => {
+                return (
+                  <span
+                    ref={(el) => {
+                      itemsRef.current[index] = el!;
+                    }}
+                    className={style.revealText}
+                    key={index}
+                  >
+                    {letter}
+                  </span>
+                );
+              })}
+            </p>
 
-          <p>
-            {paragraph2.split("").map((letter, index) => {
-              return (
-                <span
-                  ref={(el) => {
-                    pRef.current[index] = el!;
-                  }}
-                  key={index}
-                  className={style.revealText}
-                >
-                  {letter}
-                </span>
-              );
-            })}
-          </p>
+            <p>
+              {paragraph2.split("").map((letter, index) => {
+                return (
+                  <span
+                    ref={(el) => {
+                      pRef.current[index] = el!;
+                    }}
+                    key={index}
+                    className={style.revealText}
+                  >
+                    {letter}
+                  </span>
+                );
+              })}
+            </p>
+          </div>
           <a href="mailTo:llouismrc2@gmail.com">llouismrc2@gmail.com</a>
 
           <div className={style.media}>

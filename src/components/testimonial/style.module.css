@@ -14,7 +14,6 @@
     sans-serif;
   border-radius: 8px;
   padding: 0 1.3rem;
-
   border: 1px #102c4e solid;
   box-shadow: 0 2px 3px rgb(0, 0, 0, 0.2);
 }
@@ -54,4 +53,10 @@
 
   margin: 5px 10px 10px 0px;
   width: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .testiWrapper {
+    flex-wrap: wrap;
+  }
 }

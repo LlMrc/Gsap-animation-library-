@@ -25,8 +25,32 @@
 }
 
 .container img {
-  width: 100px;
+  width: 60px;
 }
 .container span {
   color: rgb(129, 43, 43);
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 100vw;
+    padding: 0;
+  }
+  .container img {
+    width: 30px;
+  }
+  .wrapper .box {
+    height: 0rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    margin: 0;
+    background-color: burlywood;
+  }
+  .container {
+    width: 66px;
+  }
 }

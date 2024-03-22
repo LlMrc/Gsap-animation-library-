@@ -31,3 +31,9 @@
   background-color: #0c2d57;
   color: rgb(199, 197, 197);
 }
+
+@media screen and (max-width: 480px) {
+  .wrapper h2 {
+    font-size: 3rem;
+  }
+}
