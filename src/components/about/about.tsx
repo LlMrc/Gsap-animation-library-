@@ -19,7 +19,7 @@ const AboutMe = () => {
       gsap.to(el, {
         y: 0,
         stagger: 0.05,
-        backgroundColor: "#fc9d7b",
+        backgroundColor: "#EB9271",
         transition: "all 2s ease",
         border: "1px solid #ff7f50 ",
         delay: 1,
