@@ -8,6 +8,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import Experiences from "./components/experiences/experiences";
 import Tools from "./components/tools/tools";
 import Footer from "./components/footer/footer";
+import { useEffect } from "react";
 
 function App() {
   /*  ACCESS THE WINDOWS FOR NEXT.JS 
@@ -22,6 +23,12 @@ function App() {
 
   */
   const locomotiveScroll = new LocomotiveScroll();
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      locomotiveScroll.update();
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
