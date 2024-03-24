@@ -1,5 +1,5 @@
 import style from "./style.module.css";
-import prflImage from "../../images/profil/profil.jpg";
+import prflImage from "../../images/profil/profile.jpg";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
@@ -21,7 +21,7 @@ const AboutMe = () => {
         stagger: 0.05,
         backgroundColor: "#EB9271",
         transition: "all 2s ease",
-        border: "1px solid #ff7f50 ",
+
         delay: 1,
         scrollTrigger: {
           trigger: el,
@@ -48,12 +48,11 @@ const AboutMe = () => {
         stagger: 0.1,
         color: "#ff7f50",
         background: "#0c2d57",
-        markers: true,
       }).to(pRef.current, {
         stagger: 0.1,
         color: "#FF7F50",
         background: "#0c2d57",
-        markers: true,
+
         x: +50,
       });
     });

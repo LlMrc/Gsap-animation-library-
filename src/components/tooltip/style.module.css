@@ -1,0 +1,18 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.tip {
+  position: absolute;
+  display: none;
+  bottom: 0px;
+  transform: translateX(150px);
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 0 10px 10px 10px;
+  color: black;
+  font-size: 12px;
+  background-color: var(--color);
+}

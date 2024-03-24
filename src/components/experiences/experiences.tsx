@@ -125,8 +125,8 @@ const Intro = () => {
       <h2>My Experiences</h2>
       <Description
         description={` Over the course of my career, I have had the opportunity to work on
-        various projects and gain valuable skills. Here's a look at some of my
-        experiences`}
+        various projects and gain valuable skills 👴. Here's a look at some of my
+        experiences:`}
       />
     </div>
   );

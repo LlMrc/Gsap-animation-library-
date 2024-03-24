@@ -18,7 +18,7 @@ const Testimonial = () => {
       <div>
         <Expert
           title={`Mobile developement`}
-          desc={`Dive into the world of mobile application development with Flutter, where my expertise shines in crafting dynamic and intuitive user experiences across iOS and Android platforms. With a robust foundation in Flutter's versatile framework, I excel in architecting and implementing feature-rich applications that seamlessly blend stunning visuals with seamless functionality.`}
+          desc={`Dive into the world of mobile application development with Flutter & jetpack Compose, where my expertise shines in crafting dynamic and intuitive user experiences across iOS and Android platforms. With a robust foundation in Flutter's versatile framework, I excel in architecting and implementing feature-rich applications that seamlessly blend stunning visuals with seamless functionality.`}
           src={mobile}
         />
       </div>
