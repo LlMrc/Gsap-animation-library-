@@ -74,13 +74,13 @@ function LandingPage() {
     return () => cntx.revert();
   }, []);
   return (
-    <section ref={homeHeader} className={styles.homeHeader}>
+    <section data-scroll-section ref={homeHeader} className={styles.homeHeader}>
       <div ref={bg} id="welcome" className={styles.background}>
         <img src={background} alt="background image" />
       </div>
 
       <div id="welcome" className={styles.introContainer}>
-        <div data-scroll data-scroll-speed="0.8" className={styles.introImage}>
+        <div data-scroll data-scroll-speed="0.9" className={styles.introImage}>
           <img ref={introImg} src={image} alt="intro image" />
         </div>
 

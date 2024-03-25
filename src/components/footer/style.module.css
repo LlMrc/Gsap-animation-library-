@@ -13,7 +13,7 @@
 }
 
 .container p a:hover {
-  color: rgb(179, 96, 165);
+  color: var(--primary);
 }
 
 @media screen and (max-width: 480px) {

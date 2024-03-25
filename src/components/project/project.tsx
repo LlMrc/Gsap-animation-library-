@@ -9,25 +9,25 @@ import { useLayoutEffect, useRef, useState } from "react";
 
 const projects = [
   {
-    title: "Masha platform",
+    title: "web platform",
     src: project1,
     link: "https://masha-plus-startup.vercel.app/",
   },
 
   {
-    title: "Masha/+ store",
+    title: "Ecommerce",
     src: project2,
     link: "https://llmrc.github.io/mash-demo/",
   },
 
   {
-    title: "Odessa viewer",
+    title: "Android apps",
     src: project3,
     link: "https://play.google.com/store/apps/details?id=dev.maggev.io",
   },
 
   {
-    title: "Mui template",
+    title: "web template",
     src: project4,
     link: "https://mashpa.vercel.app/",
   },
@@ -46,7 +46,6 @@ const Project = () => {
         start: "top top+=50",
         end: "bottom+=200 top+=100",
         pin: true,
-
         toggleActions: "restart pause none none",
       });
     });
@@ -55,7 +54,7 @@ const Project = () => {
   }, []);
 
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrapper} data-scroll-section>
       <div className={style.projectContainer}>
         <div ref={imageContainer} className={style.imageContainer}>
           <img src={`${projects[selectedProject].src}`} alt="project image" />

@@ -1,3 +1,7 @@
+section {
+  padding-top: 8vh;
+}
+
 .wrapper {
   position: relative;
 }
@@ -11,6 +15,7 @@
   height: 450px;
   background: #03788d;
   box-shadow: 0 30px 50px #dbdbdb;
+  box-shadow: 0 30px 50px #705181;
 }
 
 .container .slide .item {

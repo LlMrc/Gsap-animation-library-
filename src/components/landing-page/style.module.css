@@ -19,9 +19,9 @@
   font-size: 5vw;
   font-weight: bolder;
   color: var(--background);
-  font-family: "Space Grotesk";
   margin: 0;
   padding-bottom: 2rem;
+  color: #0c2d57;
 }
 .background {
   position: absolute;
@@ -31,7 +31,7 @@
 
 .background img {
   object-fit: cover;
-  height: 140vh;
+  height: 146vh;
   width: 100vw;
 }
 
@@ -85,4 +85,13 @@
 
 .link img:hover {
   backdrop-filter: none;
+}
+
+@media screen and (max-width: 500px) {
+  .introScreen {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding-top: 40%;
+  }
 }

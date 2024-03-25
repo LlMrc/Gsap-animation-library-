@@ -74,9 +74,14 @@ function Experiences() {
   }, []);
 
   return (
-    <>
+    <section >
       <Intro />
-      <div className={styles.wrapper}>
+      <div
+        className={styles.wrapper}
+        data-scroll
+        data-scroll-section
+        data-scroll-speed="0.5"
+      >
         <div className={styles.container} ref={contentRef}>
           <div className={styles.slide} ref={slideRef}>
             {items.map((el, index) => (
@@ -113,7 +118,7 @@ function Experiences() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 
@@ -125,8 +130,8 @@ const Intro = () => {
       <h2>My Experiences</h2>
       <Description
         description={` Over the course of my career, I have had the opportunity to work on
-        various projects and gain valuable skills. Here's a look at some of my
-        experiences`}
+        various projects and gain valuable skills 👴. Here's a look at some of my
+        experiences:`}
       />
     </div>
   );

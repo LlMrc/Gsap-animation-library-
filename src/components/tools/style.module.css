@@ -7,9 +7,6 @@
   padding: 2rem;
   margin: 0 auto;
 }
-.wrapper .box {
-  height: 8rem;
-}
 
 .container {
   background-color: #ededed;
@@ -45,10 +42,9 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .wrapper {
     margin: 0;
-    background-color: burlywood;
   }
   .container {
     width: 66px;

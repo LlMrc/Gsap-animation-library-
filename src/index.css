@@ -8,7 +8,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --background: #0c2d57;
+  --background: #07032b;
   --color: rgb(199, 197, 197);
   --primary: #cf704e;
   --secondary: #c28067;
@@ -17,7 +17,6 @@
 body {
   margin: 0px;
   background: var(--background);
-  width: max-content;
 }
 
 a {
@@ -34,7 +33,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  background-color: #0c2d57;
 }
 
 /* ////////////////////////////////////// EXPERTIZE SECTION********** */
