@@ -4,7 +4,12 @@ import Description from "../description/description";
 
 function Tools() {
   return (
-    <div className={style.wrapper}>
+    <section
+      className={style.wrapper}
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="0.3"
+    >
       <div className={style.box} />
       <Description
         description={`
@@ -23,7 +28,7 @@ function Tools() {
           </>
         );
       })}
-    </div>
+    </section>
   );
 }
 

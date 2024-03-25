@@ -54,7 +54,7 @@ const Project = () => {
   }, []);
 
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrapper} data-scroll-section>
       <div className={style.projectContainer}>
         <div ref={imageContainer} className={style.imageContainer}>
           <img src={`${projects[selectedProject].src}`} alt="project image" />

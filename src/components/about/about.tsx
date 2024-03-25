@@ -68,7 +68,7 @@ const AboutMe = () => {
 `;
 
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrapper} data-scroll data-scroll-section>
       <div className={style.container}>
         <div ref={prflRef} className={style.profil}>
           <img src={prflImage} alt="photo profil" />
@@ -146,7 +146,7 @@ const AboutMe = () => {
                 height="24"
                 viewBox="0 0 24 24"
                 fill="#0c2d57"
-                stroke="#0c2d57"
+                stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -164,7 +164,7 @@ const AboutMe = () => {
                 height="24"
                 viewBox="0 0 24 24"
                 fill="#0c2d57"
-                stroke="#0c2d57"
+                stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -185,7 +185,7 @@ const AboutMe = () => {
                 height="24"
                 viewBox="0 0 24 24"
                 fill="#0c2d57"
-                stroke="#0c2d57"
+                stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"

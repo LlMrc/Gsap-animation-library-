@@ -39,7 +39,7 @@ function Expertize() {
 
   return (
     <>
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} data-scroll-section>
         <div ref={contentWidth}>
           <h2 className="t1"> My </h2>
           <h2 id="title"> Expertizes</h2>

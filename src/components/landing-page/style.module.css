@@ -21,6 +21,7 @@
   color: var(--background);
   margin: 0;
   padding-bottom: 2rem;
+  color: #0c2d57;
 }
 .background {
   position: absolute;
@@ -30,7 +31,7 @@
 
 .background img {
   object-fit: cover;
-  height: 140vh;
+  height: 146vh;
   width: 100vw;
 }
 

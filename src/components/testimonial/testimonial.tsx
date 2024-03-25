@@ -14,7 +14,7 @@ interface Prop {
 
 const Testimonial = () => {
   return (
-    <div className={styles.testiWrapper}>
+    <div className={styles.testiWrapper} data-scroll data-scroll-speed="0.4">
       <div>
         <Expert
           title={`Mobile developement`}
