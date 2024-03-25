@@ -1,6 +1,6 @@
 {
   "name": "folio-template",
-  "homepage": "https://llmrc.github.io/gsap_intro/",
+  "homepage": ".",
   "private": true,
   "version": "0.1.0",
   "type": "module",
