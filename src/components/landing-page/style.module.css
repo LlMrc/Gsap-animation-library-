@@ -86,3 +86,12 @@
 .link img:hover {
   backdrop-filter: none;
 }
+
+@media screen and (max-width: 500px) {
+  .introScreen {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding-top: 40%;
+  }
+}
