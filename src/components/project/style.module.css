@@ -69,3 +69,13 @@
   color: #eb9271;
   padding-right: 10px;
 }
+
+@media screen and (max-width: 500px) {
+  .imageContainer img {
+    height: 6rem;
+  }
+  .column {
+    height: auto;
+    height: 60%;
+  }
+}
