@@ -8,6 +8,8 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 ## Expanding the ESLint configuration
+![Web capture_11-4-2024_6144_gsap-intro-three vercel app](https://github.com/LlMrc/Gsap-animation-library-/assets/90993312/12afe9d1-c58d-4eef-81d8-b4327f928c2d)
+
 
 If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
