@@ -17,7 +17,7 @@ const projects = [
   {
     title: "Ecommerce",
     src: project2,
-    link: "https://llmrc.github.io/mash-demo/",
+    link: "https://mash-demo-llmrc.vercel.app/",
   },
 
   {
