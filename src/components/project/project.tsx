@@ -1,7 +1,7 @@
 import style from "./style.module.css";
 import project1 from "../../images/project/platform.png";
 import project2 from "../../images/project/store.png";
-import project3 from "../../images/project/odessa.png";
+import project3 from "../../images/project/drive.jpeg";
 import project4 from "../../images/project/mui.png";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -23,7 +23,7 @@ const projects = [
   {
     title: "Android apps",
     src: project3,
-    link: "https://play.google.com/store/apps/details?id=dev.maggev.io",
+    link: "https://play.google.com/store/apps/details?id=com.mash.drive_share",
   },
 
   {
