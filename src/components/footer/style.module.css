@@ -7,6 +7,9 @@
   align-items: center;
   margin-top: 2rem;
 }
+.web_link {
+  color: red;
+}
 
 .container p a {
   color: var(--color);
