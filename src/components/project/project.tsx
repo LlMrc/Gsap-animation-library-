@@ -21,7 +21,7 @@ const projects = [
   },
 
   {
-    title: "Android apps",
+    title: "Flutter apps",
     src: project3,
     link: "https://play.google.com/store/apps/details?id=com.mash.drive_share",
   },
