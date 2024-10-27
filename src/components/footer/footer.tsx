@@ -24,6 +24,7 @@ const Footer = () => {
       <div>
         <p>&copy; 2024 My Masha+ Company. All rights reserved.</p>
         <p>Designed with ❤️ by M/+ Team</p>
+        <p>Visit us on <a href="https://play.google.com/store/apps/dev?id=5352759552017891252">  Playstore</a></p>
       </div>
     </div>
   );

@@ -10,6 +10,7 @@
   -moz-osx-font-smoothing: grayscale;
   --background: #07032b;
   --color: rgb(199, 197, 197);
+    --link: rgb(78, 240, 172);
   --primary: #cf704e;
   --secondary: #c28067;
 }

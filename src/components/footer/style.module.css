@@ -10,12 +10,11 @@
 .web_link {
   color: red;
 }
-
-.container p a {
-  color: var(--color);
+.wrapper a{
+   color: var(--link);
 }
 
-.container p a:hover {
+.wrapper p a:hover {
   color: var(--primary);
 }
 
