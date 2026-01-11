@@ -21,9 +21,9 @@ const projects = [
   },
 
   {
-    title: "Flutter apps",
+    title: "Medicale center",
     src: project3,
-    link: "https://play.google.com/store/apps/details?id=com.mash.drive_share",
+    link: "https://ephata.vercel.app/",
   },
 
   {
