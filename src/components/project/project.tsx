@@ -21,7 +21,7 @@ const projects = [
   },
 
   {
-    title: "Medicale center",
+    title: "Medical center",
     src: project3,
     link: "https://ephata.vercel.app/",
   },
